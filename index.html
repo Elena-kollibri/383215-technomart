@@ -6,62 +6,64 @@
   </head>
   <body>
 	<header class="main-header">
-		<div class="index-content-left"> не смогла придумать название
-			<div class="index-logo">
-				<img src="...">
+		<div class="container">
+			<div class="header-left-block"> 
+				<div class="index-logo">
+					<img src="...">
+				</div>	
+				<input type="search">
 			</div>	
-			<input type="search">
-		<div class="index-content-right"> и тут не смогла
-			<ul>
-				<li>
-					<a href="#">Закладки</a>
-				</li>
-				<li>
-					<a href="#">Корзина</a>
-				</li>
-				<li>	
-					<a class="btn" href="#">Заказать</a>
-				</li>
+			<div class="header-right-block">
+				<ul>
+					<li>
+						<a href="#">Закладки</a>
+					</li>
+					<li>
+						<a href="#">Корзина</a>
+					</li>
+					<li>	
+						<a class="btn" href="#">Заказать</a>
+					</li>
+				</ul>	
+			</div>
+			<div class="top-menu">
+				<p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
+				<p class="tel">+7(812)-555-05-55</p>
+				<p class="adress">г. Санкт-Петербург и т.д.</p>
+				<a href="#">Войти</a> 
+				<a href="#">Регистрация</a>
+				<div class="main-nav-container">
+					<div class="main-nav">
+						<ul>
+							<li>
+								<a>Главная</a> 
+							</li>
+							<li>
+								<a href="#">Компания</a> 
+							</li>
+							<li>
+								<a href="#">Каталог</a> 
+							</li>
+							<li>
+								<a href="#">Новости</a> 
+							</li>
+							<li>
+								<a href="#">Спецпредложения</a>
+							</li>
+							<li>
+								<a href="#">Доставка</a> 
+							</li>
+							<li>
+								<a href="#">Контакты</a> 
+							</li>
+						</ul>
+					</div>			
+				</div>
+			</div>
 		</div>
-	<header class="header-2">
-		<p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
-		<P>tel">8-888-888-888</p>
-		<p>г. Санкт-Петербург и т.д.</p>
-		<a class="login" href="#">Войти</a> или
-		<form>
-			<input type="button" value="Войти"> или
-			<button type="submit">Войти
-			<img src="..."></button>
-			<button type="submit">Регистрация</button>
-		<div class="main-nav">
-			<ul>
-				<li>
-					<a href="#">Главная</a> 
-				</li>
-				<li>
-					<a href="#">Компания</a> 
-				</li>
-				<li>
-					<a href="#">Каталог</a> 
-				</li>
-				<li>
-					<a href="#">Новости</a> 
-				</li>
-				<li>
-					<a href="#">Спецпредложения</a>
-				</li>
-				<li>
-					<a href="#">Доставка</a> 
-				</li>
-				<li>
-					<a href="#">Контакты</a> 
-				</li>
-			</ul>	
-		</div>
-	</header>
-	
+	</header>	
 	<main class="container">
-		<div class="items"> Пока непонятно, что это за блоки: то ли ссылки, то ли просто картинки.
+		<div class="items"> 
 			<div class="materials">
 				<span>На любой вкус</span> 
 			</div>	
@@ -90,41 +92,46 @@
 			<p>Популярные товары</p>
 			<a href="#">Все популярные товары</a>
 		</section>	
-		<div class="list">
-			<div class="list-item1">
+		<article class="popular-products-list">
+			<div class="popular-products-item">
 				<p>Перфоратор Bosch</p>
 				<p>25500р.</p>
 			</div>
-			<div class="list-item2">
+			<div class="popular-products-item">
 				<p>Перфоратор Bosch</p>
 				<p>25500р.</p>
 			</div>
-			<div class="list-item3">
+			<div class="popular-products-item">
 				<p>Перфоратор Bosch</p>
 				<p>25500р.</p>
 			</div>
-			<div class="list-item4">
+			<div class="popular-products-item">
 				<p>Перфоратор Bosch</p>
 				<p>25500р.</p>
 			</div>
 		</div>
-		<section class="производители"> Не знаю, какое название придумать.
+		<div class="popular-manufacturers"> 
 			<p>Популярные товары</p>
 			<a href="#">Все производители</a>
-		</section>
-		<div class="brands"> ??? Картинки можно задать списком, собрать их в один див или просто перечислить имг. ?
-			<div class="block1">
-				<img src="...">
-			</div>
+		</div>
+		<div class="brands-wrapper"> 
+			<a href="#" class="brand-item bsh">
+			<a href="#" class="brand-item de-walt">
+			<a href="#" class="brand-item itr-sk">
+			<a href="#" class="brand-item ht">
+			<a href="#" class="brand-item lg">
+			<a href="#" class="brand-item ag">
+			<a href="#" class="brand-item mb">
 		</div>
 		<div class="services">
 			<p>...</p>
-			<select name="dropdown">
-				<option value="delivery">Доставка</option>
+			<ul="dropdown">
+				<li>Доставка</li>
 					<b>...</b>
 					<p>...</p>
-				<option value="assurance">Гарантия</option>
-				<option value="credit">Кредит</option>
+				<li>Гарантия</li>
+				<li>Кредит</li>
+			<ul>	
 		</div>		
 		<div class="description">
 				<h1>Компания Техномарт</h1>
@@ -139,36 +146,62 @@
 			<a href="#">...</a>
 	</main>
 	<footer class="main-footer">
-		<div class="container">
+		<div class="contacts-container">
 			<div class="index-logo"></div>
 			<div class="footer-contacts">
 				г.Санкт-Петербург<br>
 				8-888-888-888.
 			</div>
-			<div class="breadcrumbs">
+			<div class="footer-company-menu">
 				<ul>
 					<li>
 						<a href="#">Компания</a>
-					</li> Прописать остальные кнопки	
+					</li> 
+					<li>
+						<a href="#">Новости</a>
+					</li> 
+					<li>
+						<a href="#">Каталог</a>
+					</li> 
+					<li>
+						<a href="#">Доставка</a>
+					</li> 
+					<li>
+						<a href="#">Контакты</a>
+					</li> 
+					<li>
+						<a href="#">Материалы</a>
+					</li> 
+					<li>
+						<a href="#">Техника</a>
+					</li> 
+					<li>
+						<a href="#">Инструменты</a>
+					</li> 
+					<li>
+						<a href="#">Спецпредложения</a>
+					</li> 
+				</ul>
 			</div>
 		</div>
-		<div class="container-2">
-			<section class="footer-copyright">
-			<section class="footer-social">
-				<p>Давайте дружить!</p>
-				<a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-				<a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-				<a class="social-btn social-btn-inst" href="#">Инстаграм</a>
-			</section>
-			<section class="footer-feedback">
-				<p>Обратная связь</p>
-				<a class="btn" href="https://htmlacademy.ru">mail@htmlacademy.ru</a>
-			</section>
-			<section class="footer-copyright2">
-				<p>Разработано:</p>
-				<a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
-			</section>
-		</div>
+		<div class="footer-bottom-line"><!--Я помню, вы говорили не называть элемент по его местонахождению, но в этом блоке находится разная информация, я не знаю, как назвать ее одним словом :(-->
+			<div class="container">
+				<section class="footer-copyright">
+				<section class="footer-social">
+					<a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+					<a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+					<a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+				</section>
+				<section class="footer-feedback">
+					<p>Обратная связь</p>
+					<a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+				</section>
+				<section class="footer-designed-by">
+					<p>Разработано:</p>
+					<a href="https://htmlacademy.ru">HTML Academy</a>
+				</section>
+			</div>
+		</div>	
 	</footer>	
   </body>
 </html>
