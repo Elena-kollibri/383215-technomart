@@ -6,34 +6,36 @@
   </head>
   <body>
 	<header class="main-header">
-		<div class="index-content-left"> не смогла придумать название
-			<div class="index-logo">
-				<img src="...">
+		<div class="container">
+			<div class="header-left-block"> 
+				<div class="index-logo">
+					<img src="...">
+				</div>	
+				<input type="search">
 			</div>	
-			<input type="search">
-		<div class="index-content-right"> и тут не смогла
-			<ul>
-				<li>
-					<a href="#">Закладки</a>
-				</li>
-				<li>
-					<a href="#">Корзина</a>
-				</li>
-				<li>	
-					<a class="btn" href="#">Заказать</a>
-				</li>
-		</div>
-	<header class="header-2">
-		<p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
-		<P>tel">8-888-888-888</p>
-		<p>г. Санкт-Петербург и т.д.</p>
-		<a class="login" href="#">Войти</a> или
-		<div class="item">
-			<div class="icon">Равшан Джамшутович</div> <!--Не знаю, сюда можно вписать имя или нужно выделить его отдельным спаном или дивом?-->
-			<a href="#"></a> 
-		</div>	
-		<a href="#">Мои заказы</a>
-		<a href="#">Личный кабинет</a>
+			<div class="header-right-block">
+				<ul>
+					<li>
+						<a href="#">Закладки</a>
+					</li>
+					<li>
+						<a href="#">Корзина</a>
+					</li>
+					<li>	
+						<a class="btn" href="#">Оформить заказ</a>
+					</li>
+				</ul>	
+			</div>
+			<div class="top-menu">
+				<p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
+				<p class="tel">tel8-888-888-888</p>
+				<p>г. Санкт-Петербург и т.д.</p>
+				<div class="user-block">
+					<div class="user-name">Равшан Джамшутович</div>
+					<a href="#"></a> 
+					<a href="#">Мои заказы</a>
+					<a href="#">Личный кабинет</a>
+			</div>		
 		<div class="main-nav">
 			<ul>
 				<li>
@@ -67,9 +69,10 @@
 					<a href="instrument"></a>
 						<a href="perforators"></a>
 		</div>
+		<div class="perforators">Перфораторы</div> <!--Тут тоже непонятно, как оформить этот блок и как он связан с верхним. Он в него вложен или сам по себе? -->
 		<div class="filter"></div> <!--Я без понятия, как правильно разметить этот блок. Придумываю на ходу. -->
-		<div class="row">
-			<p>Сортировка:</p>
+		<div class="sorting">
+			<div class="sorting-title">Сортировка:</p>
 				<a href="#">По цене</a>
 				<a href="#">По типу</a>
 				<a href="#">По функционалу</a>
@@ -77,15 +80,16 @@
 					<a href="#"></a>
 				<div class="scroll">down</div>
 					<a href="#"></a>
+			</div>		
 		</div>
-		<div class="left-side">
+		<div class="manufacturers-wrapper">
 			<form action="/echo" method="post" oninput="costoutput.value=cost.value"><!--Не знаю, как правильно оформить эту область, там два поля вывода результата---->
-				<label for="costcount">Цена</label>
+				<label for="costcount">Цена</label> <!--Этот пример оформления из курсов. Возможно, вы предложите что-то более удобоваримое?-->
 				<input type="range" id="costcount" name="costcount">
 				<output name="costcount">0</output>
 				<output name="costcount">30000</output>
 		</div>
-		<section class="производители">
+		<div class="manufacturers">
 			<input type="checkbox" name="BOSCH" id="name-field" checked>
 			<label for="name-field">BOSCH</label>
 			<input type="checkbox" name="Интерскол" id="name-field">
@@ -96,66 +100,133 @@
 			<label for="name-field">DEWALT</label>
 			<input type="checkbox" name="HITACHI" id="name-field">
 			<label for="name-field">HITACHI</label>
-		</section>
-		<section class="питание">
+		</div>
+		<div class="supply">
 			<input type="checkbox" name="аккумуляторные" id="name-field" checked>
 			<label for="name-field">аккумуляторные</label>
 			<input type="checkbox" name="сетевые" id="name-field" checked>
 			<label for="name-field">сетевые</label>
 			<a href="#">Показать</a>
-		<article class="list">
-			<article  class="list-item1">
-				<p>Перфоратор Bosch</p>
-				<p>22500р.</p>
-				<p>15500р.</p><!--Позже пропишу остальные карточки-->
-			</article >
-			<article  class="list-item1">
+		</div>	
+		<<div class="popular-products-list">
+			<div class="popular-products-item">
+				<a href="#">Перфоратор Bosch BFG 3000</a>
+				<div class="discount">22500p.</div>
+				<div class="products-price">15500р.</div>
+			</div>
+			<div class="popular-products-item">
+				<a href="#">Перфоратор Bosch BFG 6000</a>
+				<div class="discount">30500p.</div>
+				<div class="products-price">25500р.</div>>
+			</div>
+			<div class="popular-products-item">
+				<a href="#">Перфоратор Bosch BFG 2000</a>
 				<a href="#">Купить</a>
 				<a href="#">В закладки</a>
-				<p>Перфоратор Bosch BFG2000</p>
-				<p>12500р.</p>
-			</article >	
+				<div class="products-price">12500р.</div>
+				<div class="item-new">New</div>
+			</div>
+			<div class="popular-products-item">
+				<a href="#">Перфоратор Bosch BFG 3000</a>
+				<div class="discount">22500p.</div>
+				<div class="products-price">15500р.</div>
+			</div>
+			<div class="popular-products-item">
+				<a href="#">Перфоратор Bosch BFG 6000</a>
+				<div class="discount">30500p.</div>
+				<div class="products-price">25500р.</div>
+				<div class="item-new">New</div>
+			</div>
+			<div class="popular-products-item">
+				<a href="#">Перфоратор Bosch BFG 2000</a>
+				<div class="products-price">12500р.</div>
+			</div>
+			<div class="popular-products-item">
+				<a href="#">Перфоратор Bosch BFG 3000</a>
+				<div class="discount">22500p.</div>
+				<div class="products-price">15500р.</div>
+				<div class="item-new">New</div>
+			</div>
+			<div class="popular-products-item">
+				<a href="#">Перфоратор Bosch BFG 6000</a>
+				<div class="discount">30500p.</div>
+				<div class="products-price">25500р.</div>
+			</div>
+			<div class="popular-products-item">
+				<a href="#">Перфоратор Bosch BFG 2000</a>
+				<div class="products-price">12500р.</div>
+			</div>
 		<figure class="btn"> <!--Этот способ оформления взят из примера последнего вебинара, но непонятно, должна же быть сслыка на страницу? -->
 			<button class="btn gallery-prev" type="button">1</button>
             <button class="btn gallery-next" type="button">2</button>
 			<button class="btn gallery-next" type="button">3</button>
 			<button class="btn gallery-next" type="button">Следующая</button>
 		</figure>
-		<section class="info-desc">
-			<p>Немного о перфораторах</p>
-			<p>Перфоратор - универсальный строительный инструмент...</p>
+		<div class="perforators-wrapper">
+			<div class="perforators-title">Немного о перфораторах</div>
+			<div class="perforators-text">Перфоратор - универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне. уществующ электромеханические и пнемватические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор "трехрежимников":
+в одном устройстве будут совмещены отбойный молоток и ударная дрель.			
+			</div>
 	</main>
 	<footer class="main-footer">
-		<div class="container">
+		<div class="contacts-container">
 			<div class="index-logo"></div>
 			<div class="footer-contacts">
 				г.Санкт-Петербург<br>
 				8-888-888-888.
 			</div>
-			<div class="breadcrumbs">
+			<div class="footer-company-menu">
 				<ul>
 					<li>
 						<a href="#">Компания</a>
-					</li> Прописать остальные кнопки	
+					</li> 
+					<li>
+						<a href="#">Новости</a>
+					</li> 
+					<li>
+						<a href="#">Каталог</a>
+					</li> 
+					<li>
+						<a href="#">Доставка</a>
+					</li> 
+					<li>
+						<a href="#">Контакты</a>
+					</li> 
+					<li>
+						<a href="#">Материалы</a>
+					</li> 
+					<li>
+						<a href="#">Техника</a>
+					</li> 
+					<li>
+						<a href="#">Инструменты</a>
+					</li> 
+					<li>
+						<a href="#">Спецпредложения</a>
+					</li> 
+				</ul>
 			</div>
 		</div>
-		<div class="container-2">
-			<section class="footer-copyright">
-			<section class="footer-social">
-				<p>Давайте дружить!</p>
-				<a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-				<a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-				<a class="social-btn social-btn-inst" href="#">Инстаграм</a>
-			</section>
-			<section class="footer-feedback">
-				<p>Обратная связь</p>
-				<a class="btn" href="https://htmlacademy.ru">mail@htmlacademy.ru</a>
-			</section>
-			<section class="footer-copyright2">
-				<p>Разработано:</p>
-				<a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
-			</section>
-		</div>
-	</footer>		
+		<div class="footer-bottom-line"> 
+			<div class="container">
+				<div class="footer-copyright">
+				<div class="footer-social">
+					<a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+					<a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+					<a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+				</div>
+				<div class="footer-feedback">
+					<p>Обратная связь</p>
+					<a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+				</div>
+				<div class="footer-designed-by">
+					<p>Разработано:</p>
+					<a href="https://htmlacademy.ru">HTML Academy</a>
+				</div>
+			</div>
+		</div>	
+	</footer>	
   </body>
 </html>
+
+
