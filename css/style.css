@@ -1,8 +1,13 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "PT Sans", sans-serif;
+}
 b{  <!--Перфораторы-->
 	font-size:36px;
 	line-height:30px;
 	color:#ffffff;
-	font-weight:Regularegular;
+	font-weight:Regular;
 	font-family:Myriad Pro;
 }
 p{ <!--Интернет-магазин-->
@@ -12,10 +17,305 @@ p{ <!--Интернет-магазин-->
 	font-weight:Italic;
 	font-family:Cuprum;
 }
-p{ <!--Популярные товары-->
+h2{ <!--Популярные товары-->
 	font-size:30px;
 	line-height:30px;
 	color:#32425c;
 	font-weight:Regular;
 	font-family:Myriad Pro;
+}
+.header-top {
+	height: 43px;
+	background-color: #32425c;
+
+}
+.index-logo {
+	height: 56px;
+	width: 220px;
+	background-color: #ee3643;
+	margin-left: 131px;
+	color: white;
+	font-family:Myriad Pro;
+}
+input [type="search"] {
+	background-color: yellow;
+}
+.header-right-block {
+	display:inline-block;
+	margin-left: 618px;
+	margin-top: -25px;
+	
+	width: 452px;
+	height: 40px;
+	padding: 10px;
+	color: white;
+	text-align: center;
+	vertical-align: middle;
+
+}
+.bookmark {
+	border: 2px solid white;
+	color: white;
+	width: 139px;
+	height: 40px;
+}
+.basket {
+	border: 2px solid white;
+	color: white;
+	width: 157px;
+	height: 40px;
+}
+.btn {
+	border: 2px solid white;
+	width: 149px;
+	height: 40px;
+}
+.header-bottom .container {
+	background-color: #f1f5f7;
+	height: 276px;
+}
+
+.header-lead {
+	display:inline-block;
+	width: 185px;
+	height: 128px;
+	border: 1px solid black;
+	margin-left: 137px;
+	text-align: center;
+	vertical-align: middle;
+	padding-top: 20px;
+
+}
+
+.header-contacts  {
+	display:inline-block;
+	width: 185px;
+	height: 128px;
+	border: 1px solid black;
+	margin-left: 214px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.header-user-block  {
+	display:inline-block;
+	width: 185px;
+	height: 128px;
+	border: 1px solid black;
+	margin-left: 262px;
+	margin-right: 0;
+	text-align: center;
+	vertical-align: middle;
+}
+.main-nav {
+	width:931px;
+	height: 59px;
+	background-color:#32425c;
+	color: white;
+	margin-left: 181px;
+	padding-left: 5px;
+}
+
+.main-nav li {
+	list-style: none;
+	float: left;
+	
+}
+.main-nav a {
+	display: inline-block;
+	padding: 15px 0 0 0;
+	margin-bottom: -2px;
+	width: 120px;
+	height: 39px;
+	text-align: center;
+	vertical-align: middle;
+	color: white;
+	text-decoration: none;
+}
+.catalog-items-left {
+	float: left;
+	border: 1px solid black;
+	padding: 10px;
+	margin-left: 129px;
+}
+.catalog-items-right {
+	float: right;
+	border: 1px solid black;
+	padding: 10px;
+	margin-right: 229px;
+}
+.catalog-items::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.catalog-item materials {
+	border: 1px solid black;
+}
+.catalog-item instrument{
+	border: 1px solid black;
+}
+.catalog-item technic{
+	border: 1px solid black;
+}
+.catalog-item discounts{
+	border: 1px solid black;
+}
+.catalog-item delivery{
+	border: 1px solid black;
+}
+.catalog-slide perforators{
+	border: 1px solid black;
+}
+.popular-products-title {
+	background-color: #f7f3ec;
+	width:938px;
+	height:88px;
+	margin-left: 132px;
+}
+.popular-brands-title {
+	background-color: #f7f3ec;
+	width:938px;
+	height:88px;
+	margin-left: 132px;
+}
+.services-block {
+	height: 520px;
+	width:auto;
+	background-color: #f2f6f8;
+	margin-top: 20px;
+}
+.footer-top {
+	height: 190px;
+	width: auto;
+	background-color: #32425c;
+}
+.footer-bottom {
+	height: 103px;
+	width: auto;
+	background-color: #293449;
+}
+.footer-top-contacts .adress {
+	float: left;
+	
+	width: 361px;
+	height: 50px;
+	margin-left: -221px;
+	margin-top: 96px;
+	padding: 10px;
+	color: white;
+
+}
+.footer-top-contacts .index-logo {
+	float: left;
+	height: 65px;
+	width: 220px;
+	background-color: #ee3643;
+	margin-left: 124px;
+	color: white;
+	font-family:Myriad Pro;
+}
+.footer-top-menu-primary {
+	width:501px;
+	height: 59px;
+	color: white;
+	margin-right: 230px;
+	margin-top: 30px;
+	
+	float: right;
+	
+}	
+.footer-top-menu-primary li {
+	list-style: none;
+	float: left;
+	
+}
+ .footer-top-menu-primary a {
+ 	
+	margin-top: 32px;
+	width: 100px;
+	height: 39px;
+	text-align: center;
+	vertical-align: middle;
+	color: white;
+	text-decoration: none;
+	padding: 5px;
+	margin-left: 15px;
+	
+}
+
+clearfix:: after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.footer-top-menu-secondary {
+	float: right;
+	width:471px;
+	height: 59px;
+	color: white;
+	margin-right: 231px;
+	margin-top: 10px;
+	
+}
+.footer-top-menu-secondary li {
+	list-style: none;
+	float: left;
+	
+}
+.footer-top-menu-secondary a {
+	width:471px;
+	height: 59px;
+	color: #ffd180;
+	margin-left: 10px;
+	text-decoration: none;
+}
+.footer-bottom-copyright {
+	float: left;
+	width: 138px;
+	height: 77px;
+	margin-left: 116px;
+	
+	color: white;
+}
+.footer-bottom-social {
+	float: left;
+	width: 138px;
+	height: 77px;
+	margin-left: 220px;
+	
+	color: white;
+	
+}
+.footer-bottom-social a {
+	color: white;
+	text-decoration: none;
+}
+.footer-bottom-feedback-mail {
+	float: right;
+	width: 188px;
+	height: 77px;
+	margin-right: 395px;
+	
+	color: white;
+	text-decoration: none;
+}
+.footer-bottom-feedback-mail a {
+	color: #ffd180;
+	text-decoration: none;
+}
+
+.footer-bottom-feedback-designed-by {
+	float: right;
+	width: 143px;
+	height: 77px;
+	margin-right: 53px;
+	
+	color: white;
+	text-decoration: none;
+	margin-top: -80px;
+}
+.footer-bottom-feedback-designed-by a {
+	color: #ffd180;
+	text-decoration: none;
 }

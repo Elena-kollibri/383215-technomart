@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+      <link href="css/style.css" rel="stylesheet">
+	 
   </head>
   <body>
   	<header class="main-header">
@@ -15,9 +17,9 @@
   					<input type="search" placeholder="Поиск...">
   				</div>
   				<div class="header-right-block">
-  					<a href="#">Закладки</a>
-  					<a href="#">Корзина</a>
-  					<a class="btn "href="#">Оформить заказ</a>
+  					<a href="#" class="bookmark">Закладки</a>
+  					<a href="#" class="basket">Корзина</a>
+  					<a class="btn" "href="#">Оформить заказ</a>
   				</div>	
   			</div>
   		</div> 
@@ -108,7 +110,7 @@
   	  			</div>	
   			</div>
   			<div class="popular-products">
-  				<div class="popular-products title">
+  				<div class="popular-products-title">
   					<h2>Популярные товары</h2>
   					<a href="#">Все популярные товары</a>
   				</div>
@@ -224,14 +226,14 @@
 	<footer class="main-footer">
 		<div class="footer-top">
 			<div class="container">
-				<div class="footer-top contacts">
+				<div class="footer-top-contacts">
 					<a class="index-logo">
   						<img src="img/logo.png" alt="Техномарт">
   					</a>
   					<div class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7 (812) 555-05-55</div>	
 				</div>
 				<div class="footer-top menu-nav">
-					<div class="footer-top-menu-primary"></div>
+					<div class="footer-top-menu-primary">
 						<ul>
 							<li>
 								<a href="#">Компания</a> 
