@@ -1,0 +1,31 @@
+body {
+	min-width: 1200px;
+    margin: 0;
+    padding: 0;
+    font-family: "Cuprum", "PT Sans";
+    font-weight: regular;
+    font-size:16px;
+    color: #ffffff;
+    line-height: 24px;
+}
+b{  
+	font-size:36px;
+	line-height:30px;
+	color:#ffffff;
+	font-weight:Regular;
+	font-family:Myriad Pro;
+}
+p{ 
+	font-size:16px;
+	line-height:23px;
+	color:#ee3643;
+	font-style:Italic;
+	font-family:Cuprum;
+}
+h2{ 
+	font-size:30px;
+	line-height:30px;
+	color:#32425c;
+	font-style :Regular;
+	font-family:Myriad Pro;
+}
